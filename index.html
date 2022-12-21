@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css" type="text/css">
+  <title>Encriptador de texto</title>
+</head>
+<body>
+  <main>
+    <div class="main-left">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="Alura logo">
+      </div>
+      <div class="input-container">
+      <textarea id="input" spellcheck="false" placeholder="Ingrese el texto aquí" autofocus></textarea>
+      <div class="message" id="message">
+        <span>!</span><p >Solo letras minúsculas y sin acentos</p>
+      </div>
+      <div class="buttons">
+        <button class="btn primary" id="btn-encrypt">Encriptar</button>
+        <button class="btn secondary" id="btn-decrypt">Desencriptar</button>
+      </div>
+      </div>
+    </div>
+    <div class="main-right">
+      <div class="screen-container hidden">
+        <div id="screen"></div>
+        <button id="copy" class="btn secondary copy">Copiar</button>
+      </div>
+      <div class="center">
+        <div class="search-image">
+          <img src="assets/images/Muñeco.png" alt="">
+        </div>
+        <div class="empty-text">
+          <h3>Ningún mensaje fue encontrado</h3>
+          <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+      </div>
+    </div>
+    <!-- <input type="text" id="input"><span id="message"></span>
+    <div id="screen">Solo letras minúsculas y sin acentos</div>
+    <button type="button" id="btn-encrypt">Encriptar</button>
+    <button type="button" id="btn-decrypt">Descencriptar</button>
+    <button type="button" id="copy">Copiar</button> -->
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-center">
+        <p>Diseñado por <a href="https://www.aluracursos.com/" target="__blank">Alura</a> y contruido por Pool Llerena</p>
+        <ul class="icons">
+          <li class="icon"><a href="https://github.com/Pool1541" target="__blank"><i class="fa-brands fa-github"></i></a></li>
+          <li class="icon"><a href="https://www.linkedin.com/in/pool-llerena-ch%C3%A1vez-a4b6ba128/" target="__blank"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li class="icon"><a href="https://www.instagram.com/aaryh_/" target="__blank"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+  <!-- FontsAwesome CDN -->
+  <script src="https://kit.fontawesome.com/3feef57c63.js" crossorigin="anonymous"></script>
+</body>
+</html>
