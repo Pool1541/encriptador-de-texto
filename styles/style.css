@@ -401,6 +401,7 @@ main {
 
   .main-right {
     min-width: 200px;
+    padding: 20px 25px;
   }
 
   main {
