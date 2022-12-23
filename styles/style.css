@@ -353,7 +353,7 @@ main {
     display: flex;
     align-items: unset;
     justify-content: center;
-    min-height: 200px;
+    min-height: 150px;
     flex: 5 1 auto;
   }
 
@@ -404,7 +404,7 @@ main {
   }
 
   main {
-    padding : 30px;
+    padding : 30px 15px;
   }
 
   #input {
@@ -421,6 +421,6 @@ main {
   }
 
   .footer-center p {
-    font-size: .7rem;
+    font-size: .65rem;
   }
 }
