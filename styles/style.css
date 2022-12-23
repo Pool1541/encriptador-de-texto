@@ -43,6 +43,7 @@ main {
   display: flex;
   gap: clamp(25px,5vw,4.6rem);
   justify-content: space-between;
+  flex: 1 1 auto;
 }
 
 .main-left {
@@ -57,7 +58,8 @@ main {
 }
 
 .input-container {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   margin-top: 100px;
   width: 100%;
 }
@@ -70,7 +72,8 @@ main {
   resize: none;
   font-size: 2rem;
   color: var(--dark-blue-300);
-  height: 500px;
+  flex: 1 1 auto;
+  /* height: 500px; */
 }
 
 #input::placeholder {
@@ -246,16 +249,12 @@ main {
   justify-content: center;
   align-items: center;
   align-self: flex-end;
-  padding: 0 0 15px 0;
+  padding: 15px 0;
 }
 
 .footer-center p {
   color: var(--gray-400);
   font-size: .9rem;
-}
-
-.footer-center a {
-  transition: all .2s ease;
 }
 
 .footer-center p a:visited {
@@ -277,8 +276,19 @@ main {
   color: rgb(53, 53, 53);
 }
 
-.icon a:hover {
-  color: #757FB2;
+
+.icon:last-child a:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.icon:nth-child(2) a:hover {
+  color: #0a66c2;
+}
+
+.icon:first-child a:hover {
+  color: var(--black);
 }
 
 @keyframes shake {
@@ -341,17 +351,15 @@ main {
   .main-right {
     width: auto;
     display: flex;
-    align-items: center;
+    align-items: unset;
     justify-content: center;
     min-height: 200px;
-  }
-
-  #input {
-    height: 4 00px;
+    flex: 5 1 auto;
   }
 
   .center {
     flex: 1 1 auto;
+    align-self: center;
   }
 
   .search-image {
@@ -364,6 +372,7 @@ main {
 
   .screen-container {
     width: 100%;
+    height: auto;
   }
 
   .copy {
@@ -399,7 +408,7 @@ main {
   }
 
   #input {
-    height: 100px;
+    height: auto;
   }
 
   .copy::after {
@@ -409,5 +418,9 @@ main {
 
   .footer-container {
     padding : 0 30px
+  }
+
+  .footer-center p {
+    font-size: .7rem;
   }
 }
