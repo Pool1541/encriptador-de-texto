@@ -168,7 +168,7 @@ main {
 
 #screen::after {
   content : '|';
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   animation: flicker 1s ease-in-out infinite;
 }
 
