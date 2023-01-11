@@ -8,13 +8,20 @@
   <link rel="stylesheet" href="styles/style.css" type="text/css">
   <title>Encriptador de texto</title>
 </head>
-<body>
-  <main>
+<body class="dark">
+  <canvas id=canvas></canvas>
+  <main class="hidden">
     <div class="main-left">
       <div class="logo">
         <img src="assets/images/Logo.png" alt="Alura logo">
       </div>
       <div class="input-container">
+        <label class="label">
+          <div class="toggle">
+              <input class="toggle-state" type="checkbox" name="check" value="check">
+              <div class="indicator"></div>
+          </div>
+        </label>
       <textarea id="input" spellcheck="false" placeholder="Ingrese el texto aquí" autofocus></textarea>
       <div class="message" id="message">
         <span>!</span><p >Solo letras minúsculas y sin acentos</p>
@@ -40,13 +47,8 @@
         </div>
       </div>
     </div>
-    <!-- <input type="text" id="input"><span id="message"></span>
-    <div id="screen">Solo letras minúsculas y sin acentos</div>
-    <button type="button" id="btn-encrypt">Encriptar</button>
-    <button type="button" id="btn-decrypt">Descencriptar</button>
-    <button type="button" id="copy">Copiar</button> -->
   </main>
-  <footer>
+  <footer class="hidden">
     <div class="footer-container">
       <div class="footer-center">
         <p>Diseñado por <a href="https://www.aluracursos.com/" target="__blank">Alura</a> y construido por Pool Llerena</p>
@@ -57,8 +59,9 @@
         </ul>
       </div>
     </div>
-  </footer>
+  </footer> 
   <script src="app.js"></script>
+  <script src="animation.js"></script>
   <!-- FontsAwesome CDN -->
   <script src="https://kit.fontawesome.com/3feef57c63.js" crossorigin="anonymous"></script>
 </body>
