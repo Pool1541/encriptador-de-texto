@@ -53,7 +53,9 @@ inserción del texto que será encriptado o desencriptado, y el usuario debe pod
 
 ## :rocket: Despliegue
 
-Puedes ver el proyecto desplegado en <a href='https://pool1541.github.io/encriptador-de-texto/' target='__blank'>este enlace</a>
+Puedes ver el proyecto desplegado en <a href="https://pool1541.github.io/encriptador-de-texto/" target="_blank" rel="noopener noreferrer">este enlace</a>
+
+
 
 ---
 
