@@ -83,7 +83,7 @@ Puedes ver el proyecto desplegado en <a href="https://pool1541.github.io/encript
 
 ---
 
-## 🛠 Skills
+## 🛠 Stack
 
 Javascript, HTML, CSS <br>
 
